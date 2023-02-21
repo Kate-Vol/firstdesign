@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*------------------*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #dcdcdc;
+}
+
+.header-row {
+  color: #777777;
+  display: flex;
+  justify-content: center;
+  height: 215px;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  flex: 272px 1 1;
+  justify-content: end;
+}
+
+.header-logo-img {
+  flex-basis: 93px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-logo-company {
+  flex: 170px 1 1;
+  position: relative;
+  top: 7px;
+}
+
+.header-company-title {
+  font-weight: bold;
+  font-size: 27px;
+  transform: scaleY(1.1);
+  line-height: 20px;
+}
+
+.header-company-description {
+  font-weight: 500;
+  margin-top: 19px;
+  transform: scaleY(1.1);
+}
+
+.header-tel {
+  font-size: 26px;
+  font-weight: 400;
+  flex: 648px 1 1;
+  transform: scaleY(1.5);
+  color: #8a8a8a;
+}
+.header-tel p {
+  padding-bottom: 3px;
+  text-align: end;
+}
+
+.navbar {
+  background-color: #777777;
+}
+
+.navbar-nav {
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 5px;
+  font-size: 27px;
+}
+
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-item a:focus, .nav-item a:active, .nav-item a:hover {
+  text-decoration: underline;
+}
+
+.nav-separator {
+  font-size: 23.5px;
+}
+
+.image-row {
+  display: flex;
+  background-color: #f8f8f8;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex: 373px 1 0;
+}
+.image-row img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0px auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.maincontent {
+  min-height: 705px;
+}
+
+.maincontent-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.maincontent-news {
+  background-color: #777777;
+  height: 522px;
+  flex: 325px 0 1;
+  padding-left: 33px;
+  padding-right: 50px;
+}
+
+.maincontent-news-title {
+  font-size: 33px;
+  font-weight: bold;
+  transform: scaleY(1.1);
+  letter-spacing: 1px;
+  padding-top: 14px;
+}
+
+.maincontent-news-list {
+  color: #f0f0f0;
+  padding-top: 30px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.maincontent-news-list-data {
+  font-style: italic;
+}
+
+.maincontent-news-list-text {
+  padding-bottom: 22px;
+}
+
+.maincontent-news-archive {
+  display: block;
+  text-align: right;
+  padding-top: 8px;
+  font-size: 13px;
+}
+.maincontent-news-archive a {
+  color: #f0f0f0;
+}
+
+.maincontent-info {
+  color: #777777;
+  flex: 530px 0 1;
+  margin-left: 30px;
+}
+
+.maincontent-info-title {
+  font-size: 34px;
+  transform: scaleY(1.05);
+  letter-spacing: 1px;
+  padding-top: 13px;
+}
+
+.maincontent-info-text {
+  padding-top: 24px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.maincontent-info-text p {
+  padding-bottom: 22px;
+}
+
+.footer {
+  background-color: #777777;
+  flex: 205px 1 0;
+  font-size: 13px;
+  color: #eeeeee;
+}
+.footer a {
+  color: #eeeeee;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-copyright {
+  flex: 325px 1 0;
+  line-height: 1.6;
+  position: relative;
+  top: 40px;
+}
+
+.footer-nav {
+  flex: 375px 1 0;
+  line-height: 1.85;
+  position: relative;
+  top: 40px;
+}
+
+.footer-design {
+  display: flex;
+  flex: 220px 1 0;
+  position: relative;
+  top: 41px;
+}
+
+.footer-design-logo {
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: relative;
+  top: 5px;
+  right: 8px;
+}
+
+.footer-design-company {
+  line-height: 1.6;
+}
